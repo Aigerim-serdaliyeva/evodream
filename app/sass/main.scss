@@ -49,6 +49,10 @@
 .footer {
   background-color: #fcfdfd;
 
+  &--color {
+    background-color: #f6f6f6;
+  }
+
   .top {
     margin: 0 auto;
     display: block;
@@ -921,6 +925,9 @@
       font-weight: bold;
       font-style: italic;
       margin: 0 15px -10px;
+      &--1 {
+        margin-left: 0;
+      }
     }
 
     &__block {

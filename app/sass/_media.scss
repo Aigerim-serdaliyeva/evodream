@@ -205,12 +205,59 @@
       }      
     }
 
+    &-razdel {
+      &__title {
+        margin-bottom: 30px;
+      }
+
+      .search {
+        position: relative;
+        margin: 0 0 0 auto;
+        right: 0;
+      }
+
+      .tab {
+        margin: 0 0 40px;
+      }
+
+      .razdel {
+        &--2 {
+          margin-bottom: 15px;
+        }
+        &__block {
+          &--3 {
+            margin: 0 auto 0 0;
+          }
+        }
+      }
+    }
+
+    &-cases2 {
+      &__content {
+        margin: 0;
+      }
+      .cases2 {
+        &__block {
+          &--2 {
+            margin: 0 auto 0 0;
+          }
+        }        
+      }
+    }
+
     &-businessman {
       padding-top: 130px;
 
       .businessman {
+        background-size: cover;
+        margin: 0;
         &__block {
           display: block;
+        }
+        &__text {
+          &:first-child {
+            margin: 0 auto 10px 0;
+          }
         }
       }
     }
@@ -362,6 +409,53 @@
         }
       }
     }
+
+    &-businessman {
+
+      .businessman {
+        &__top {
+          display: block;
+          text-align: center;
+        }
+        &__title {
+          font-size: 16px;
+        }
+        &__text {
+          font-size: 16px;
+        }
+        &__num {
+          font-size: 48px;
+        }
+      }
+    }
+
+    &-razdel {
+      
+      .razdel {
+        padding: 30px;
+        height: auto;
+        min-height: auto;
+        display: block;
+
+        &__block {
+          max-width: none;
+        }
+      }
+    }
+
+    &-cases2 {
+      
+      .cases2 {
+        padding: 30px;
+        height: auto;
+        min-height: auto;
+        display: block;
+
+        &__block {
+          max-width: none;
+        }
+      }
+    }
   }
 
   .business-modal {
@@ -438,6 +532,82 @@
           margin-bottom: 10px;
         }
         &__text {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &-businessman {
+      &__title {
+        font-size: 30px;
+        letter-spacing: -0.5px;
+      }
+      .businessman {
+        &__text {
+          display: block;
+        }
+        &__num {
+          font-size: 24px;
+          margin: 0 5px;
+          &--1 {
+            margin-left: 0;
+          }
+        }
+        &__start {
+          width: 230px;
+          height: auto;
+          padding: 10px;
+        }
+      }
+    }
+
+    &-razdel {
+      .search {
+        width: 240px;
+        margin: 0 auto;
+        height: 35px;
+      }
+
+      .tab {
+        &__link {
+          font-size: 16px;
+          margin: 0 20px 20px 0;
+        }
+      }
+
+      .razdel {
+        padding: 20px 10px;
+
+        &__title {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+
+        &__text {
+          font-size: 16px;
+        }
+
+        &__link {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &-cases2 {
+
+      .cases2 {
+        padding: 20px 10px;
+
+        &__title {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+
+        &__text {
+          font-size: 16px;
+        }
+
+        &__link {
           font-size: 16px;
         }
       }
