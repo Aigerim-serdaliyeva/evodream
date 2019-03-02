@@ -1,0 +1,9 @@
+@import "_mixins/font-face";
+
+@include font-face ("Proxima Nova", "../fonts/Proxima Nova/Regular/ProximaNova-Regular", normal);
+@include font-face ("Proxima Nova", "../fonts/Proxima Nova/Bold/ProximaNova-Bold", bold);
+@include font-face ("Proxima Nova", "../fonts/Proxima Nova/SemiBold/ProximaNova-Semibold", 600);
+@include font-face ("Proxima Nova", "../fonts/Proxima Nova/Light/ProximaNova-Light", 300);
+@include font-face ("Montserrat", "../fonts/Montserrat/Medium/Montserrat-Medium", 500);
+@include font-face ("Montserrat", "../fonts/Montserrat/ExtraLight/Montserrat-ExtraLight", 300);
+@include font-face ("Montserrat", "../fonts/Montserrat/Bold/Montserrat-Bold", bold);
