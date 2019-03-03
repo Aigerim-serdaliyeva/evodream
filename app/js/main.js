@@ -216,35 +216,16 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    centerMode: true,
+    centerMode: true, 
     centerPadding: '0px',
-    pauseOnHover: true,        
     responsive: [
-       {
-          breakpoint: 1200,
-          settings: {
-          slidesToShow: 3,
-          }      
-       },
-       {
-          breakpoint: 991,
-          settings: {
-          slidesToShow: 2,
-          }      
-       },
-       {
-          breakpoint: 768,
-          settings: {
+      {
+         breakpoint: 1230,
+         settings: {
           slidesToShow: 1,
-          }      
-       }, 
-       {      
-          breakpoint: 580,
-          settings: {
-          slidesToShow: 1,
-          }      
+         }      
       }
-    ]
+   ]
 })
 
 

@@ -466,29 +466,8 @@
 
 .s-reviews {
 
-  .carousel-reviews {
-    box-shadow: 0px 4px 43px 0px rgba(0, 0, 0, 0.12);
-
-    .owl {
-      &-item {
-        padding: 0 5px 0px;
-      }
-  
-      &-nav {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 130px;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 25px;
-      }
-  
-      &-prev, &-next {
-        position: static;
-        transform: none;
-      }
-    }
+  .slick-track {
+    padding: 20px 0;
   }
 
   .video {
@@ -556,21 +535,22 @@
   }
 
   .review {
-    max-width: 1227px;
-    width: 100%;
-    margin: 0 auto;
+    // max-width: 1227px;
+    // width: 100%;
+    // margin: 0 auto;
     display: flex;    
 
     &__video {
       margin-right: 28px;
-      max-width: 709px;
-      width: 100%;
+      // max-width: 709px;
+      width: 57%;
       flex-shrink: 0;
     }
 
     &__block {
-      max-width: 490px;
-      width: 100%;
+      flex-grow: 1;
+      // max-width: 490px;
+      // width: 100%;
       padding: 40px 30px 30px 15px;
       position: relative;
     }
@@ -625,6 +605,55 @@
     &__text {
       font-size: 16px;
       margin-bottom: 20px;
+    }
+  }
+
+  .slick-slide {
+    position: relative;
+    transform: scale(0.7);
+    transition: transform 0.3s;
+    .carousel__item {
+      width: 1230px !important;
+      position: relative;
+      background: #fff;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        background: rgba(#fff, 0.5);
+      }
+    }
+    &.slick-active {
+      z-index: 10;
+    }
+    &.slick-center {
+      transform: scale(1);
+      z-index: 80;
+      .carousel__item {
+        &:before {
+          display: none;
+        }
+      }
+      .review {
+        position: relative;
+        box-shadow: 0px 4px 43px 0px rgba(0, 0, 0, 0.12);
+        &:before {
+          content: "";
+          position: absolute;
+          top: -20px;
+          right: 40px;
+          width: 77px;
+          height: 64px;
+          background-image: url('../img/kavy4ka.png');
+          background-repeat: no-repeat;
+        }
+      }
     }
   }
 }

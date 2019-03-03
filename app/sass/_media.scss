@@ -84,6 +84,20 @@
         margin: 0 auto 25px;
       }
     }
+
+    &-reviews {
+      .slick-slide {
+        transform: none;
+        transition: none;
+        padding: 0 30px;
+        .carousel__item {
+          width: 100% !important;
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
   }
 	
 }
