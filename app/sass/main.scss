@@ -1110,6 +1110,16 @@
 
 .s-cases2 {
 
+  .carousel-cases2 {
+    .owl-dots {
+      counter-reset: dots;
+    }
+    .owl-dot:before {
+        counter-increment:dots;
+        content: counter(dots);
+    }
+  }
+
   &__title {
     font-size: 30px;
     font-weight: bold;

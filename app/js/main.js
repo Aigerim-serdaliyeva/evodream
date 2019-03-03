@@ -279,7 +279,7 @@ $(document).ready(function () {
 
   $(".carousel-cases2").owlCarousel({
     loop: false,
-    dots: false, 
+    dots: true, 
     nav: true,
     smartSpeed: 500,
     margin: 50,
