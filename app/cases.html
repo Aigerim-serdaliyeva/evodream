@@ -111,7 +111,12 @@
         <div class="s-razdel__title">
           Полезные статьи
         </div>
-        <input class="search" placeholder="поиск" type="search" name="q">
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>        
         <div class="tab">
           <div class="tab__links">
             <div class="tab__link active" data-id="tab1">Раздел</div>
