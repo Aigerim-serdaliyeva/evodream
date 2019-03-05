@@ -439,7 +439,7 @@ h1, h2, h3, h4, h5, h6 {
     &-dots {
       position: relative;
       text-align: center;
-      margin-top: 15px;
+      margin-top: 25px;
     }
     
     &-dot {
@@ -447,10 +447,11 @@ h1, h2, h3, h4, h5, h6 {
       height: 16px;
       background: $accent !important;
       margin: 0 5px;
-      border-radius: 50%;
+      // border-radius: 50%;
 
       &.active {
         background: darken($accent, 15%) !important;
+        color: $accent;
       } 
     }
 	}

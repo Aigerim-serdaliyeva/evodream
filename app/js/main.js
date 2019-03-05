@@ -201,6 +201,16 @@ $(document).ready(function () {
     $label.find("video")[0].pause();
   });
 
+  $(".more").click( function() {
+    
+    $(this).siblings(".osnovatel__text--none").addClass("d-block");
+    $(this).addClass('d-none');
+  });
+
+  $(".more-blog").click( function() {
+    $(this).siblings(".blog__text").addClass("blog__text--height");
+  });
+
   $(".carousel").on('init', function(event, slick){
     slick.$slider.find(".slick-center").prev().addClass("slick-center-prev");
  });
@@ -228,6 +238,33 @@ $(document).ready(function () {
    ]
 })
 
+$(".carousel-service").owlCarousel({
+  loop: false,
+  dots: true, 
+  nav: false,
+  smartSpeed: 500,
+  margin: 50,
+  navText: ['', ''],
+  responsive: {
+    0: { items: 1, mouseDrag: false, },
+    576: { items: 2, mouseDrag: true,  },
+    991: { items: 3, mouseDrag: true,  },
+  },
+});
+
+$(".carousel-cases").owlCarousel({
+  loop: false,
+  dots: true, 
+  nav: false,
+  smartSpeed: 500,
+  margin: 50,
+  navText: ['', ''],
+  responsive: {
+    0: { items: 1, mouseDrag: false, },
+    576: { items: 2, mouseDrag: true,  },
+    991: { items: 3, mouseDrag: true,  },
+  },
+});
 
   $(".carousel-reviews").owlCarousel({
     loop: false,
@@ -240,6 +277,21 @@ $(document).ready(function () {
       0: { items: 1, mouseDrag: false, },
       576: { items: 1, mouseDrag: true,  },
       991: { items: 3, mouseDrag: true,  },
+    },
+  });
+
+  $(".carousel-klient").owlCarousel({
+    loop: false,
+    dots: true, 
+    nav: false,
+    smartSpeed: 500,
+    margin: 50,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false, },
+      576: { items: 2, mouseDrag: true,  },
+      767: { items: 3, mouseDrag: true,  },
+      991: { items: 4, mouseDrag: true,  },
     },
   });
 
