@@ -129,6 +129,7 @@
 
 .top {
   cursor: pointer;
+  position: relative;
   width: 39px;
   height: 39px;
   background-image: -moz-linear-gradient( 37deg, rgb(254,102,149) 0%, rgb(252,132,107) 100%);
@@ -136,7 +137,6 @@
   background-image: -ms-linear-gradient( 37deg, rgb(254,102,149) 0%, rgb(252,132,107) 100%);
   box-shadow: 0px 0px 18px 0px rgba(253, 114, 108, 0.56);
   border-radius: 50%;
-  position: relative;
   transition: box-shadow 0.3s;
   img {
     position: absolute;
@@ -625,6 +625,61 @@
     &__text {
       font-size: 16px;
       margin-bottom: 20px;
+    }
+  }
+
+  .slick {
+    &-slider {
+      padding-bottom: 60px;
+    }
+    &-arrow {
+      position: absolute;
+      bottom: 0;
+      cursor: pointer;
+      width: 45px;
+      height: 45px;
+      background-image: -moz-linear-gradient( 37deg, rgb(254,102,149) 0%, rgb(252,132,107) 100%);
+      background-image: -webkit-linear-gradient( 37deg, rgb(254,102,149) 0%, rgb(252,132,107) 100%);
+      background-image: -ms-linear-gradient( 37deg, rgb(254,102,149) 0%, rgb(252,132,107) 100%);
+      box-shadow: 0px 0px 18px 0px rgba(253, 114, 108, 0.56);
+      border-radius: 50%;
+      transition: box-shadow 0.3s;
+      border: 0;
+      outline: 0;
+      padding: 0;
+      z-index: 20;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 6px;
+        height: 13px;
+        margin-top: -7.5px;
+        margin-left: -3px;
+        background-image: url('../img/arrow-top.png') !important;
+        background-repeat: no-repeat;
+        transform-origin: 50%;
+      }
+
+      &:hover {
+        box-shadow: 0px 0px 18px 5px rgba(253, 114, 108, 0.56);
+      }
+    }
+
+    &-prev {
+      left: calc(50% - 60px);
+      &:before {
+        transform: rotateZ(-90deg);
+      }
+    }
+
+    &-next {
+      right: calc(50% - 60px);
+      &:before {
+        transform: rotateZ(90deg);
+      }
     }
   }
 
