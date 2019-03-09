@@ -128,6 +128,7 @@
 }
 
 .top {
+  cursor: pointer;
   width: 39px;
   height: 39px;
   background-image: -moz-linear-gradient( 37deg, rgb(254,102,149) 0%, rgb(252,132,107) 100%);
@@ -136,11 +137,15 @@
   box-shadow: 0px 0px 18px 0px rgba(253, 114, 108, 0.56);
   border-radius: 50%;
   position: relative;
+  transition: box-shadow 0.3s;
   img {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 43%;
+  }
+  &:hover {
+    box-shadow: 0px 0px 18px 5px rgba(253, 114, 108, 0.56);
   }
 }
 
