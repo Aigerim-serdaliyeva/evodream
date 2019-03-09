@@ -207,10 +207,6 @@ $(document).ready(function () {
     $(this).addClass('d-none');
   });
 
-  $(".more-blog").click( function() {
-    $(this).siblings(".blog__text").addClass("blog__text--height");
-  });
-
   $(".carousel").on('init', function(event, slick){
     slick.$slider.find(".slick-center").prev().addClass("slick-center-prev");
  });
