@@ -201,9 +201,9 @@ $(document).ready(function () {
     $label.find("video")[0].pause();
   });
 
-  $(".more").click( function() {
-    
-    $(this).siblings(".osnovatel__text--none").addClass("d-block");
+  $(".more").click( function(e) {
+    e.preventDefault();    
+    $(this).siblings(".osnovatel__text.d-none").removeClass("d-none");
     $(this).addClass('d-none');
   });
 
